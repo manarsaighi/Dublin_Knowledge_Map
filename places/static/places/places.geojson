@@ -1,0 +1,23 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.283,
+          53.355
+        ]
+      },
+      "properties": {
+        "name": "TU Dublin Grangegorman",
+        "category": "university",
+        "address": "Grangegorman, Dublin 7",
+        "description": "Technological University Dublin, Grangegorman campus",
+        "website": "https://www.tudublin.ie/",
+        "hours": "09:00-18:00"
+      }
+    }
+  ]
+}
