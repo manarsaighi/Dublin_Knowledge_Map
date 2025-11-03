@@ -1,0 +1,3099 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.270179711,
+          53.35234411
+        ]
+      },
+      "properties": {
+        "id": 25,
+        "name": "14 Henrietta Street",
+        "category": "museum",
+        "address": "14 Henrietta Street",
+        "description": "Discover the story of this house and the lives of the people who lived there from Georgian townhouse to tenement dwelling"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.317356763,
+          53.35959486
+        ]
+      },
+      "properties": {
+        "id": 178,
+        "name": "Ãras an UachtarÃ¡in",
+        "category": "heritage",
+        "address": "Chesterfield Avenue",
+        "description": "The official residence of the President of Ireland completed in 1751"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.28764622,
+          53.32911869
+        ]
+      },
+      "properties": {
+        "id": 138,
+        "name": "Aaron Steinberg Jewish Cemetery",
+        "category": "heritage",
+        "address": "Aughavannagh Road",
+        "description": "A glimpse of Dublin's history and the lives of its past residents"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.257111821,
+          53.34853949
+        ]
+      },
+      "properties": {
+        "id": 26,
+        "name": "Abbey Theatre Archive",
+        "category": "museum",
+        "address": "26 Lower Abbey Street",
+        "description": "Over one million items dating from 1894 including programmes, posters, photos, scripts and designs"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.249211408,
+          53.37105325
+        ]
+      },
+      "properties": {
+        "id": 67,
+        "name": "All Hallows Trust",
+        "category": "university",
+        "address": "Grace Park Road",
+        "description": "Former third level education institution"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.250426769,
+          53.34118717
+        ]
+      },
+      "properties": {
+        "id": 68,
+        "name": "American College Dublin",
+        "category": "university",
+        "address": "2 Merrion Square North",
+        "description": "Third level education institution"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.287117,
+          53.350957
+        ]
+      },
+      "properties": {
+        "id": 139,
+        "name": "Arbour Hill Cemetery",
+        "category": "heritage",
+        "address": "Arbour Hill Road",
+        "description": "A glimpse of Dublin's history and the lives of its past residents"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.24922611,
+          53.35283706
+        ]
+      },
+      "properties": {
+        "id": 66,
+        "name": "ARC: Art and Research Collaboration ",
+        "category": "university",
+        "address": "The LAB",
+        "description": "A Masters Programme run by IADT, based at The LAB"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.231589519,
+          53.32989919
+        ]
+      },
+      "properties": {
+        "id": 69,
+        "name": "Ballsbridge College of Further Education",
+        "category": "university",
+        "address": "Shelbourne Road",
+        "description": "Third level education institution"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.352506588,
+          53.34073836
+        ]
+      },
+      "properties": {
+        "id": 70,
+        "name": "Ballyfermot College of Further Education",
+        "category": "university",
+        "address": "Ballyfermot Road",
+        "description": "Third level education institution"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.352506588,
+          53.34073836
+        ]
+      },
+      "properties": {
+        "id": 71,
+        "name": "Ballyfermot College of Further Education - Arts Block",
+        "category": "university",
+        "address": "Kylemore Road",
+        "description": "Third level education institution"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.351792622,
+          53.34013575
+        ]
+      },
+      "properties": {
+        "id": 1,
+        "name": "Ballyfermot Library",
+        "category": "library",
+        "address": "Ballyfermot Road",
+        "description": "Books, movies and more, learning and studying and free access to computers and the internet"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.265067182,
+          53.39041332
+        ]
+      },
+      "properties": {
+        "id": 2,
+        "name": "Ballymun Library",
+        "category": "library",
+        "address": "Main Street",
+        "description": "Books, movies and more, learning and studying and free access to computers and the internet"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.339113382,
+          53.32962179
+        ]
+      },
+      "properties": {
+        "id": 140,
+        "name": "Bluebell Graveyard",
+        "category": "heritage",
+        "address": "Old Naas Road",
+        "description": "A glimpse of Dublin's history and the lives of its past residents"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.303325568,
+          53.34166136
+        ]
+      },
+      "properties": {
+        "id": 141,
+        "name": "Bully's Acre Cemetery",
+        "category": "heritage",
+        "address": "South Circular Road",
+        "description": "A glimpse of Dublin's history and the lives of its past residents"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.265399671,
+          53.35006829
+        ]
+      },
+      "properties": {
+        "id": 3,
+        "name": "Business Information Centre",
+        "category": "library",
+        "address": "Ilac Centre",
+        "description": "A reference service specialising in company and market information"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.299735572,
+          53.36162583
+        ]
+      },
+      "properties": {
+        "id": 4,
+        "name": "Cabra Library",
+        "category": "library",
+        "address": "Navan Road",
+        "description": "Books, movies and more, learning and studying and free access to computers and the internet"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.227024585,
+          53.37132313
+        ]
+      },
+      "properties": {
+        "id": 142,
+        "name": "Casino Marino",
+        "category": "heritage",
+        "address": "Cherrymount Crescent",
+        "description": "The most important example of neoclassical architecture in Ireland - currently closed for restoration"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.25888344,
+          53.3460396
+        ]
+      },
+      "properties": {
+        "id": 75,
+        "name": "CCT College Dublin",
+        "category": "university",
+        "address": "Westmoreland Street",
+        "description": "Third level education institution"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.230227727,
+          53.32841245
+        ]
+      },
+      "properties": {
+        "id": 72,
+        "name": "CDETB Administrative Offices",
+        "category": "university",
+        "address": "Town Hall",
+        "description": "Third level education institution"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.234966231,
+          53.34761152
+        ]
+      },
+      "properties": {
+        "id": 64,
+        "name": "Central Bank of Ireland Archive",
+        "category": "museum",
+        "address": "New Wapping Street",
+        "description": "The Central Bank of Ireland's Archive tells the story of economic development and progression in Ireland from 1786 to present. "
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.265399671,
+          53.35006829
+        ]
+      },
+      "properties": {
+        "id": 5,
+        "name": "Central Library",
+        "category": "library",
+        "address": "Ilac Centre",
+        "description": "Books, movies and more, learning and studying and free access to computers and the internet"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.246103027,
+          53.35711276
+        ]
+      },
+      "properties": {
+        "id": 6,
+        "name": "Charleville Mall Library",
+        "category": "library",
+        "address": "North Strand",
+        "description": "Books, movies and more, learning and studying and free access to computers and the internet"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.2674552,
+          53.34219922
+        ]
+      },
+      "properties": {
+        "id": 27,
+        "name": "Chester Beatty",
+        "category": "museum",
+        "address": "Chester Beatty Library",
+        "description": "Award-winning museum with collections from across Asia, Europe & the Middle East"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.261746095,
+          53.31806602
+        ]
+      },
+      "properties": {
+        "id": 73,
+        "name": "Church of Ireland College of Education",
+        "category": "university",
+        "address": "96 Rathmines Road Upper",
+        "description": "Third level education institution"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.264703101,
+          53.34358486
+        ]
+      },
+      "properties": {
+        "id": 74,
+        "name": "City Colleges",
+        "category": "university",
+        "address": "South Great Georges Street",
+        "description": "Third level education institution"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.29426516,
+          53.36876836
+        ]
+      },
+      "properties": {
+        "id": 79,
+        "name": "ColÃƒÂ¡iste Ãƒâ€°anna",
+        "category": "university",
+        "address": "Kilkieran Road",
+        "description": "Third level education institution"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.213119195,
+          53.39680317
+        ]
+      },
+      "properties": {
+        "id": 77,
+        "name": "ColÃƒÂ¡iste DhÃƒÂºlaigh - Coolock Campus",
+        "category": "university",
+        "address": "Barryscourt Road",
+        "description": "Third level education institution"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.190991678,
+          53.38623471
+        ]
+      },
+      "properties": {
+        "id": 78,
+        "name": "ColÃƒÂ¡iste DhÃƒÂºlaigh - Raheny Campus",
+        "category": "university",
+        "address": "Springdale Road",
+        "description": "Third level education institution"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.159612682,
+          53.386789
+        ]
+      },
+      "properties": {
+        "id": 76,
+        "name": "ColÃƒÂ¡iste DhÃƒÂºlaigh  - Kilbarrack Campus",
+        "category": "university",
+        "address": "Briarfield Villas",
+        "description": "Third level education institution"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.212053766,
+          53.39636867
+        ]
+      },
+      "properties": {
+        "id": 7,
+        "name": "Coolock Library",
+        "category": "library",
+        "address": "Barryscourt Road",
+        "description": "Books, movies and more, learning and studying and free access to computers and the internet"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.309818537,
+          53.32093706
+        ]
+      },
+      "properties": {
+        "id": 80,
+        "name": "Crumlin College of Further Education",
+        "category": "university",
+        "address": "Crumlin Road",
+        "description": "Third level education institution"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.255619451,
+          53.37138032
+        ]
+      },
+      "properties": {
+        "id": 81,
+        "name": "DCU St. Patricks College of Education",
+        "category": "university",
+        "address": "Drumcondra Road Upper",
+        "description": "Third level education institution"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.266600582,
+          53.33844404
+        ]
+      },
+      "properties": {
+        "id": 82,
+        "name": "DIT Aungier Street",
+        "category": "university",
+        "address": "Bishop Street",
+        "description": "Third level education institution"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.268667391,
+          53.35126068
+        ]
+      },
+      "properties": {
+        "id": 83,
+        "name": "DIT Bolton Street",
+        "category": "university",
+        "address": "Bolton Street",
+        "description": "Third level education institution"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.259341166,
+          53.35182238
+        ]
+      },
+      "properties": {
+        "id": 84,
+        "name": "DIT Cathal Brugha Street",
+        "category": "university",
+        "address": "66-74 Cathal Brugha Street",
+        "description": "Third level education institution"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.262908998,
+          53.34098189
+        ]
+      },
+      "properties": {
+        "id": 85,
+        "name": "DIT Conservatory of Music and Drama - Chatham Row",
+        "category": "university",
+        "address": "Chatham Row",
+        "description": "Third level education institution"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.266004647,
+          53.32440478
+        ]
+      },
+      "properties": {
+        "id": 86,
+        "name": "DIT Conservatory of Music and Drama - Rathmines",
+        "category": "university",
+        "address": "63 Rathmines Road Lower",
+        "description": "A conservatoire for education in the performing arts"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.266077523,
+          53.33743717
+        ]
+      },
+      "properties": {
+        "id": 88,
+        "name": "DIT Kevin Street",
+        "category": "university",
+        "address": "Kevin Street Lower",
+        "description": "Third level education institution"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.256672022,
+          53.35584078
+        ]
+      },
+      "properties": {
+        "id": 89,
+        "name": "DIT Mountjoy Square",
+        "category": "university",
+        "address": "Mountjoy Square South",
+        "description": "Third level education institution"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.265551264,
+          53.32526446
+        ]
+      },
+      "properties": {
+        "id": 90,
+        "name": "DIT Rathmines Road",
+        "category": "university",
+        "address": "143-149 Rathmines House",
+        "description": "Third level education institution"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.291843261,
+          53.33133727
+        ]
+      },
+      "properties": {
+        "id": 8,
+        "name": "Dolphin's Barn Library",
+        "category": "library",
+        "address": "Parnell Road",
+        "description": "Books, movies and more, learning and studying and free access to computers and the internet"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.162425773,
+          53.39473375
+        ]
+      },
+      "properties": {
+        "id": 9,
+        "name": "Donaghmede Library",
+        "category": "library",
+        "address": "Donaghmede Shopping Centre",
+        "description": "Books, movies and more, learning and studying and free access to computers and the internet"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.25590815,
+          53.35664469
+        ]
+      },
+      "properties": {
+        "id": 91,
+        "name": "Dorset College",
+        "category": "university",
+        "address": "66 Dorset Street Lower",
+        "description": "Third level education institution"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.333725108,
+          53.32421105
+        ]
+      },
+      "properties": {
+        "id": 143,
+        "name": "Drimnagh Castle",
+        "category": "heritage",
+        "address": "Long Mile Road",
+        "description": "Irelands only remaining moated castle"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.250566,
+          53.371136
+        ]
+      },
+      "properties": {
+        "id": 144,
+        "name": "Drumcondra Graveyard",
+        "category": "heritage",
+        "address": "Church Avenue",
+        "description": "A glimpse of Dublin's history and the lives of its past residents"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.264217,
+          53.363993
+        ]
+      },
+      "properties": {
+        "id": 145,
+        "name": "Drumcondra Graveyard (St. Georges)",
+        "category": "heritage",
+        "address": "Whitworth Road",
+        "description": "A glimpse of Dublin's history and the lives of its past residents"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.259009192,
+          53.36989375
+        ]
+      },
+      "properties": {
+        "id": 10,
+        "name": "Drumcondra Library",
+        "category": "library",
+        "address": "Millmount Avenue",
+        "description": "Books, movies and more, learning and studying and free access to computers and the internet"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.265465479,
+          53.34049261
+        ]
+      },
+      "properties": {
+        "id": 92,
+        "name": "Dublin Business School & DBS School of Arts",
+        "category": "university",
+        "address": "Bow Lane East",
+        "description": "Third level education institution"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.265421434,
+          53.34271093
+        ]
+      },
+      "properties": {
+        "id": 146,
+        "name": "Dublin Castle",
+        "category": "heritage",
+        "address": "Castle Street",
+        "description": "The historic heart of Dublin, still a major government complex and tourist attraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.267192577,
+          53.34389259
+        ]
+      },
+      "properties": {
+        "id": 147,
+        "name": "Dublin City Hall",
+        "category": "heritage",
+        "address": "Dame Street",
+        "description": "A magnificent example of the Georgian architecture for which Dublin is world-renowned."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.245279595,
+          53.34309087
+        ]
+      },
+      "properties": {
+        "id": 11,
+        "name": "Dublin City Library and Archive",
+        "category": "library",
+        "address": "138-144 Pearse Street",
+        "description": "Books, movies and more, learning and studying and free access to computers and the internet"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.259221369,
+          53.38649727
+        ]
+      },
+      "properties": {
+        "id": 93,
+        "name": "Dublin City University",
+        "category": "university",
+        "address": "Collins Avenue Extension",
+        "description": "Third level education institution"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.25193622,
+          53.34219884
+        ]
+      },
+      "properties": {
+        "id": 94,
+        "name": "Dublin Dental School And Hospital",
+        "category": "university",
+        "address": "18-22 Lincoln Place",
+        "description": "Third level education institution"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.228179149,
+          53.37070543
+        ]
+      },
+      "properties": {
+        "id": 28,
+        "name": "Dublin Fire Brigade Museum",
+        "category": "museum",
+        "address": "Dublin Fire Brigade Training Centre",
+        "description": "The history of theÂ fire services in Ireland - tours every Thursday 10.30-14.00 or by appointment"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.245872525,
+          53.331208
+        ]
+      },
+      "properties": {
+        "id": 95,
+        "name": "Dublin Institute for Advanced Studies",
+        "category": "university",
+        "address": "10 Burlington Road",
+        "description": "Third level education institution"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.27207036,
+          53.34318908
+        ]
+      },
+      "properties": {
+        "id": 29,
+        "name": "Dublinia and the Viking World",
+        "category": "museum",
+        "address": "St. Michaels Hill",
+        "description": "Experience Viking and Medieval Dublin and see the city from a new perspective"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.247948869,
+          53.3484454
+        ]
+      },
+      "properties": {
+        "id": 30,
+        "name": "EPIC The Irish Emigration Museum",
+        "category": "museum",
+        "address": "CHQ Dublin",
+        "description": "Get hands on with Irish culture and its past with our fully interactive museum and discover Ireland from the outside in"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.273283948,
+          53.30578665
+        ]
+      },
+      "properties": {
+        "id": 31,
+        "name": "Erasmus Smith Schools Archive",
+        "category": "museum",
+        "address": "The High School",
+        "description": "Relevant to the history of Irish education and local history from 1650 accessible by appointment"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.3516,
+          53.3661
+        ]
+      },
+      "properties": {
+        "id": 180,
+        "name": "Farmleigh House & Estate",
+        "category": "heritage",
+        "address": "Farmleigh House and Estate",
+        "description": "Farmleigh, the official Irish State Guesthouse. The estate consists of beautiful private gardens. Formerly owned by the famous Guinness family."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.297737872,
+          53.38916668
+        ]
+      },
+      "properties": {
+        "id": 12,
+        "name": "Finglas Library",
+        "category": "library",
+        "address": "Main Finglas Shopping Centre",
+        "description": "Books, movies and more, learning and studying and free access to computers and the internet"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.255970852,
+          53.34107985
+        ]
+      },
+      "properties": {
+        "id": 148,
+        "name": "Freemasons Hall",
+        "category": "heritage",
+        "address": "17-19 Molesworth Street",
+        "description": "Tours by appointment of the worldâ€™s oldest Grand Lodge in continuous existence"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.252432743,
+          53.3612444
+        ]
+      },
+      "properties": {
+        "id": 32,
+        "name": "GAA Museum",
+        "category": "museum",
+        "address": "Croke Park",
+        "description": "Celebrating Irelands national games of hurling and Gaelic football from ancient times to the present day"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.266788654,
+          53.34292446
+        ]
+      },
+      "properties": {
+        "id": 34,
+        "name": "Garda SiochÃ¡na Museum at Dublin Castle",
+        "category": "museum",
+        "address": "Treasury Building",
+        "description": "The history of An Garda SÃ­ochÃ¡na and policing in Ireland before 1922"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.240971039,
+          53.34242192
+        ]
+      },
+      "properties": {
+        "id": 35,
+        "name": "Geological Museum of Trinity College Dublin",
+        "category": "museum",
+        "address": "Department of Geology",
+        "description": "80,000 specimens collected since 1777 in a building inspired by Venices Byzantine architecture"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.276828,
+          53.372621
+        ]
+      },
+      "properties": {
+        "id": 149,
+        "name": "Glasnevin (St. MobhÃ­s) Graveyard",
+        "category": "heritage",
+        "address": "Church Lane",
+        "description": "A glimpse of Dublin's history and the lives of its past residents"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.276766219,
+          53.36946534
+        ]
+      },
+      "properties": {
+        "id": 36,
+        "name": "Glasnevin Cemetery Museum",
+        "category": "museum",
+        "address": "Finglas Road",
+        "description": "The worlds first cemetery museum: explore the lives of more than 1.5 million people buried here"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.316865793,
+          53.33645311
+        ]
+      },
+      "properties": {
+        "id": 150,
+        "name": "Goldenbridge Cemetery",
+        "category": "heritage",
+        "address": "St. Vincent Street West",
+        "description": "A glimpse of Dublin's history and the lives of its past residents"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.254133914,
+          53.33937292
+        ]
+      },
+      "properties": {
+        "id": 151,
+        "name": "Government Buildings",
+        "category": "heritage",
+        "address": "Leinster House",
+        "description": "Free tours of this historic building normally take place every Saturday"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.260658854,
+          53.34933276
+        ]
+      },
+      "properties": {
+        "id": 33,
+        "name": "GPO Witness History Museum",
+        "category": "museum",
+        "address": "OConnell Street Lower",
+        "description": "Explore the story of modern Irish history this award winning museum"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.262858593,
+          53.3551446
+        ]
+      },
+      "properties": {
+        "id": 96,
+        "name": "Grafton College",
+        "category": "university",
+        "address": "7 Gardiner Row",
+        "description": "Third level education institution"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.2848261,
+          53.35810924
+        ]
+      },
+      "properties": {
+        "id": 182,
+        "name": "Grangegorman Histories",
+        "category": "heritage",
+        "address": "Grangegorman Development Agency, 4th Floor Park House, ",
+        "description": "A public history project contributing to the work of uncovering, cataloguing and commemorating the history of Grangegorman. "
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.305814907,
+          53.35945031
+        ]
+      },
+      "properties": {
+        "id": 152,
+        "name": "Grangegorman Military Cemetery",
+        "category": "heritage",
+        "address": "Blackhorse Avenue",
+        "description": "A glimpse of Dublin's history and the lives of its past residents"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.278747581,
+          53.33130302
+        ]
+      },
+      "properties": {
+        "id": 97,
+        "name": "Griffith College Dublin",
+        "category": "university",
+        "address": "South Circular Road",
+        "description": "Third level education institution"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.286785094,
+          53.34178676
+        ]
+      },
+      "properties": {
+        "id": 37,
+        "name": "Guinness Archives",
+        "category": "museum",
+        "address": "St James Gate",
+        "description": "A treasure chest of Guinness history from 1759 to the present day open by appointment only"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.263098,
+          53.346323
+        ]
+      },
+      "properties": {
+        "id": 153,
+        "name": "Hapenny Bridge",
+        "category": "heritage",
+        "address": "Aston Quay",
+        "description": "Join the 30,000 people crossing this historic footbridge every day"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.253311754,
+          53.36443008
+        ]
+      },
+      "properties": {
+        "id": 98,
+        "name": "Holy Cross College",
+        "category": "university",
+        "address": "Clonliffe Road",
+        "description": "Third level education institution"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.254849,
+          53.338622
+        ]
+      },
+      "properties": {
+        "id": 154,
+        "name": "Huguenot Cemetery",
+        "category": "heritage",
+        "address": "10 Merrion Row",
+        "description": "Peer through the gates at the graves of the descendants of the Huguenots who fled France in the 17th century"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.265687544,
+          53.34547397
+        ]
+      },
+      "properties": {
+        "id": 99,
+        "name": "IBat College",
+        "category": "university",
+        "address": "Wellington Quay",
+        "description": "Third level education institution"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.264703101,
+          53.34358486
+        ]
+      },
+      "properties": {
+        "id": 100,
+        "name": "ICD Business School",
+        "category": "university",
+        "address": "R114",
+        "description": "Third level education institution"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.312646102,
+          53.34022611
+        ]
+      },
+      "properties": {
+        "id": 101,
+        "name": "Inchicore College of Further Education",
+        "category": "university",
+        "address": "Emmet Road",
+        "description": "Third level education institution"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.309734703,
+          53.34040172
+        ]
+      },
+      "properties": {
+        "id": 13,
+        "name": "Inchicore Library",
+        "category": "library",
+        "address": "34 Emmet Road",
+        "description": "Books, movies and more, learning and studying and free access to computers and the internet"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.250398248,
+          53.35255018
+        ]
+      },
+      "properties": {
+        "id": 102,
+        "name": "Independent College Dublin",
+        "category": "university",
+        "address": "Block B, The Steelworks",
+        "description": "Third level education institution"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.230537457,
+          53.33368661
+        ]
+      },
+      "properties": {
+        "id": 103,
+        "name": "Institute of Public Administration",
+        "category": "university",
+        "address": "57-61 Lansdowne Road",
+        "description": "Third level education institution"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.246847932,
+          53.33867197
+        ]
+      },
+      "properties": {
+        "id": 38,
+        "name": "Irish Architectural Archive",
+        "category": "museum",
+        "address": "45 Merrion Square",
+        "description": "We preserve and make available material about the architecture of Ireland"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.264947692,
+          53.34462385
+        ]
+      },
+      "properties": {
+        "id": 39,
+        "name": "Irish Film Archive",
+        "category": "museum",
+        "address": "6 Eustace Street",
+        "description": "Ireland's rich and varied film history - access by appointment and viewing charges apply"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.26941925,
+          53.33074748
+        ]
+      },
+      "properties": {
+        "id": 40,
+        "name": "Irish Jewish Museum",
+        "category": "museum",
+        "address": "3 Walworth Road, South Circular Road",
+        "description": "Memorabilia telling the story of an important, though small, part of Ireland's cultural and historic heritage"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.235091513,
+          53.33612336
+        ]
+      },
+      "properties": {
+        "id": 41,
+        "name": "Irish Labour History Society Museum & Archives",
+        "category": "museum",
+        "address": "Beggars Bush",
+        "description": "The records and reminiscences of the Irish working class and its organisations"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.245279595,
+          53.34309087
+        ]
+      },
+      "properties": {
+        "id": 42,
+        "name": "Irish Theatre Archive",
+        "category": "museum",
+        "address": "Dublin City Library and Archive",
+        "description": "Over 100,000 items about Irish theatre from prompt books and production notes to photos and recordings"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.250386675,
+          53.33894523
+        ]
+      },
+      "properties": {
+        "id": 43,
+        "name": "Irish Traditional Music Archive",
+        "category": "museum",
+        "address": "73 Merrion Square",
+        "description": "The national public archive and resource centre for the traditional music and dance of Ireland"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.259437534,
+          53.34405214
+        ]
+      },
+      "properties": {
+        "id": 44,
+        "name": "Irish Whiskey Museum",
+        "category": "museum",
+        "address": "118 Grafton Street",
+        "description": "Journey back through time and discover the intriguing tale of Irish whiskey"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.25999292,
+          53.35415633
+        ]
+      },
+      "properties": {
+        "id": 45,
+        "name": "James Joyce Centre",
+        "category": "museum",
+        "address": "35 North Great Georges Street",
+        "description": "Temporary and permanent exhibitions dedicated to one of Ireland's most influential and celebrated writers"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.267675466,
+          53.33741574
+        ]
+      },
+      "properties": {
+        "id": 14,
+        "name": "Kevin Street Library",
+        "category": "library",
+        "address": "18 Lower Kevin Street",
+        "description": "Books, movies and more, learning and studying and free access to computers and the internet"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.208092205,
+          53.37122326
+        ]
+      },
+      "properties": {
+        "id": 104,
+        "name": "Killester College of Further Education",
+        "category": "university",
+        "address": "Collins Avenue East",
+        "description": "Third level education institution"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.206636,
+          53.374721
+        ]
+      },
+      "properties": {
+        "id": 156,
+        "name": "Killester Grave Yard",
+        "category": "heritage",
+        "address": "Killester Avenue",
+        "description": "A glimpse of Dublin's history and the lives of its past residents"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.312427,
+          53.342537
+        ]
+      },
+      "properties": {
+        "id": 181,
+        "name": "Kilmainham Congregational Church",
+        "category": "heritage",
+        "address": "Kilmainham Congregational Church, ",
+        "description": "Georgian Congregational Church built in 1810. Originally established as a place of worship for local mill labourers & workers at Kilmainham Gaol."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.308523156,
+          53.34173471
+        ]
+      },
+      "properties": {
+        "id": 157,
+        "name": "Kilmainham Gaol",
+        "category": "heritage",
+        "address": "Museum Visitor Centre",
+        "description": "The site of some of the most heroic and tragic events in Irelands history"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.271664421,
+          53.35279302
+        ]
+      },
+      "properties": {
+        "id": 105,
+        "name": "Kings Inns",
+        "category": "university",
+        "address": "Henrietta Street",
+        "description": "Third level education institution"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.351674143,
+          53.34511712
+        ]
+      },
+      "properties": {
+        "id": 106,
+        "name": "Kylemore College - third level",
+        "category": "university",
+        "address": "Kylemore Road",
+        "description": "Third level education institution"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.257796345,
+          53.35225951
+        ]
+      },
+      "properties": {
+        "id": 107,
+        "name": "Larkin Community College - third level",
+        "category": "university",
+        "address": "Champions Avenue, Cathal Brugha Street",
+        "description": "Third level education institution"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.254257324,
+          53.34012187
+        ]
+      },
+      "properties": {
+        "id": 158,
+        "name": "Leinster House",
+        "category": "heritage",
+        "address": "Kildare Street",
+        "description": "Discover the history of Parliament in Ireland, from Norman times to today"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.275404189,
+          53.34003095
+        ]
+      },
+      "properties": {
+        "id": 108,
+        "name": "Liberties College",
+        "category": "university",
+        "address": "Bull Alley Street",
+        "description": "Third level education institution"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.277658228,
+          53.34393897
+        ]
+      },
+      "properties": {
+        "id": 137,
+        "name": "Liberties Training Centre",
+        "category": "university",
+        "address": "Liberties Training Centre, ",
+        "description": "We provide quality, QQI accredited training to young people aged between 16-21 years of age"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.275584697,
+          53.34169864
+        ]
+      },
+      "properties": {
+        "id": 109,
+        "name": "Liffey College",
+        "category": "university",
+        "address": "1-3 Swifts Alley",
+        "description": "Third level education institution"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.257730837,
+          53.3403161
+        ]
+      },
+      "properties": {
+        "id": 159,
+        "name": "Mansion House",
+        "category": "heritage",
+        "address": "Dawson Street",
+        "description": "The official residence of the Lord Mayor of Dublin since 1715"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.240500589,
+          53.3840025
+        ]
+      },
+      "properties": {
+        "id": 110,
+        "name": "Margaret Aylward Community College - third level",
+        "category": "university",
+        "address": "The Thatch Road",
+        "description": "Third level education institution"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.24535835,
+          53.35513783
+        ]
+      },
+      "properties": {
+        "id": 111,
+        "name": "Marino College - Connolly House",
+        "category": "university",
+        "address": "171 Connolly House",
+        "description": "Third level education institution"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.231585284,
+          53.36440988
+        ]
+      },
+      "properties": {
+        "id": 112,
+        "name": "Marino College - Marino Mart",
+        "category": "university",
+        "address": "14-20 Marino Mart",
+        "description": "Third level education institution"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.234242056,
+          53.37283018
+        ]
+      },
+      "properties": {
+        "id": 113,
+        "name": "Marino Institute of Education",
+        "category": "university",
+        "address": "Griffith Avenue",
+        "description": "Third level education institution"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.23122712,
+          53.36440072
+        ]
+      },
+      "properties": {
+        "id": 15,
+        "name": "Marino Library",
+        "category": "library",
+        "address": "14 - 20 Marino Mart",
+        "description": "Books, movies and more, learning and studying and free access to computers and the internet"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.270593769,
+          53.33919667
+        ]
+      },
+      "properties": {
+        "id": 46,
+        "name": "Marsh's Library",
+        "category": "museum",
+        "address": "St. Patricks Close",
+        "description": "Unchanged for three centuries, this 18th century library houses more than 25,000 rare and fascinating books"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.25526517,
+          53.36421545
+        ]
+      },
+      "properties": {
+        "id": 114,
+        "name": "Mater Dei Institute of Education",
+        "category": "university",
+        "address": "204-206 Clonliffe Road",
+        "description": "Third level education institution"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.250923137,
+          53.33915012
+        ]
+      },
+      "properties": {
+        "id": 115,
+        "name": "Merrion School of Music",
+        "category": "university",
+        "address": "78 Merrion Square South",
+        "description": "Third level education institution"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.260445,
+          53.35021
+        ]
+      },
+      "properties": {
+        "id": 160,
+        "name": "Millennium Spire of Dublin",
+        "category": "heritage",
+        "address": "Monument of Light",
+        "description": "A huge stainless steel monument in the middle of OConnell Street"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.245112587,
+          53.31716696
+        ]
+      },
+      "properties": {
+        "id": 116,
+        "name": "Millltown Institute of Theology And Philosophy",
+        "category": "university",
+        "address": "Milltown Road",
+        "description": "Third level education institution"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.260721135,
+          53.35476299
+        ]
+      },
+      "properties": {
+        "id": 117,
+        "name": "Montessori Education Centre",
+        "category": "university",
+        "address": "41-43 North Great Georges Street",
+        "description": "Third level education institution"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.282787783,
+          53.32420391
+        ]
+      },
+      "properties": {
+        "id": 161,
+        "name": "Mount Jerome Cemetery & Crematorium",
+        "category": "heritage",
+        "address": "Harolds Cross Road",
+        "description": "A glimpse of Dublin's history and the lives of its past residents"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.265399671,
+          53.35006829
+        ]
+      },
+      "properties": {
+        "id": 16,
+        "name": "Music Library",
+        "category": "library",
+        "address": "Ilac Centre",
+        "description": "A resource for music students and music lovers alike"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.268705117,
+          53.33880979
+        ]
+      },
+      "properties": {
+        "id": 47,
+        "name": "National Archives of Ireland",
+        "category": "museum",
+        "address": "Bishop Street",
+        "description": "Records that document the historical evolution of the modern Irish State and our national identity"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.252171054,
+          53.33400714
+        ]
+      },
+      "properties": {
+        "id": 118,
+        "name": "National College of Business Administration",
+        "category": "university",
+        "address": "7 Hatch Street Lower",
+        "description": "Third level education institution"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.24318762,
+          53.34863331
+        ]
+      },
+      "properties": {
+        "id": 119,
+        "name": "National College of Ireland",
+        "category": "university",
+        "address": "Mayor Street Lower",
+        "description": "Third level education institution"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.266657445,
+          53.34764686
+        ]
+      },
+      "properties": {
+        "id": 48,
+        "name": "National Leprechaun Museum",
+        "category": "museum",
+        "address": "Twilfit House",
+        "description": "The world's 1st museum dedicated to Ireland's folklore and mythology. Exploring our rich oral history and imagination through live storytelling"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.254605828,
+          53.3410795
+        ]
+      },
+      "properties": {
+        "id": 49,
+        "name": "National Library of Ireland",
+        "category": "museum",
+        "address": "Kildare Street",
+        "description": "The world's biggest collection of documents, photographs and manuscripts revealing Ireland's history"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.25332806,
+          53.33985113
+        ]
+      },
+      "properties": {
+        "id": 50,
+        "name": "National Museum of Ireland - Natural History",
+        "category": "museum",
+        "address": "Merrion Square West",
+        "description": "Lots to discover and explore- from aardvarks to zebras"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.235390509,
+          53.33516611
+        ]
+      },
+      "properties": {
+        "id": 51,
+        "name": "National Print Museum",
+        "category": "museum",
+        "address": "Beggars Bush Barracks, Haddington Road",
+        "description": "Championing the heritage, craft and technology of print and its impact on the world"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.260091499,
+          53.33668249
+        ]
+      },
+      "properties": {
+        "id": 162,
+        "name": "Newman House",
+        "category": "heritage",
+        "address": "85-86 St. Stephens Green",
+        "description": "University College Dublins beautifully restored Georgian Townhouse now a conference centre"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.260621171,
+          53.33662348
+        ]
+      },
+      "properties": {
+        "id": 163,
+        "name": "Newman University Church",
+        "category": "heritage",
+        "address": "87b St. Stephens Green",
+        "description": "Historic and beautiful Church, a distinctive landmark in Dublinâ€™s city centre for over 150 years"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.247619971,
+          53.3379784
+        ]
+      },
+      "properties": {
+        "id": 164,
+        "name": "Number Twenty Nine - ESBs Georgian House Museum",
+        "category": "heritage",
+        "address": "29 Fitzwilliam Street Lower",
+        "description": "Closed until 2020 â€“ go to the website to meet Mrs. Olivia Beatty who moved into this historic house in 1794"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.250426769,
+          53.34118717
+        ]
+      },
+      "properties": {
+        "id": 165,
+        "name": "Oscar Wilde House",
+        "category": "heritage",
+        "address": "1-3 Merrion Square North",
+        "description": "Childhood home of the writer and dramatist Oscar Wilde - group visits by appointment"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.245279595,
+          53.34309087
+        ]
+      },
+      "properties": {
+        "id": 17,
+        "name": "Pearse Street Library",
+        "category": "library",
+        "address": "138-148 Pearse Street",
+        "description": "Public and special study library with lots of cultural events "
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.230559255,
+          53.32812593
+        ]
+      },
+      "properties": {
+        "id": 18,
+        "name": "Pembroke (Ballsbridge) Library",
+        "category": "library",
+        "address": "Anglesea Road",
+        "description": "Books, movies and more, learning and studying and free access to computers and the internet"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.271059939,
+          53.36111861
+        ]
+      },
+      "properties": {
+        "id": 19,
+        "name": "Phibsboro Library",
+        "category": "library",
+        "address": "Blacquiere Bridge, Off North Circular Road",
+        "description": "Books, movies and more, learning and studying and free access to computers and the internet"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.330955063,
+          53.36608488
+        ]
+      },
+      "properties": {
+        "id": 166,
+        "name": "Phoenix Park Visitor Centre",
+        "category": "heritage",
+        "address": "Nunciature Road",
+        "description": "Enjoy a historical interpretation of the park from 3500 BC to the present day"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.265426,
+          53.344826
+        ]
+      },
+      "properties": {
+        "id": 65,
+        "name": "Photo Museum Ireland",
+        "category": "museum",
+        "address": "Meeting House Square",
+        "description": "The National Centre for Contemporary Photography in Ireland. "
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.248269922,
+          53.37944941
+        ]
+      },
+      "properties": {
+        "id": 120,
+        "name": "Plunket College",
+        "category": "university",
+        "address": "Swords Road",
+        "description": "Third level education institution"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.245019424,
+          53.37121335
+        ]
+      },
+      "properties": {
+        "id": 121,
+        "name": "Pobalscoil Rosmini",
+        "category": "university",
+        "address": "Grace Park Road",
+        "description": "Third level education institution"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.267077131,
+          53.35204513
+        ]
+      },
+      "properties": {
+        "id": 122,
+        "name": "Portobello Institute",
+        "category": "university",
+        "address": "43 Dominick Street Lower",
+        "description": "Third level education institution"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.26619,
+          53.34517
+        ]
+      },
+      "properties": {
+        "id": 63,
+        "name": "Queer-in-Progress. Timeline: Online Archive",
+        "category": "museum",
+        "address": "Project Arts Centre",
+        "description": "This online archive aims to map expanded narratives within Irish LGBTQ+ histories. Focusing on lesbian, feminist, trans, bi & AIDS histories"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.173105472,
+          53.3799764
+        ]
+      },
+      "properties": {
+        "id": 20,
+        "name": "Raheny Library",
+        "category": "library",
+        "address": "Howth Road",
+        "description": "Books, movies and more, learning and studying and free access to computers and the internet"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.264991328,
+          53.32407862
+        ]
+      },
+      "properties": {
+        "id": 123,
+        "name": "Rathmines College of Further Education",
+        "category": "university",
+        "address": "200 Rathmines Townhall",
+        "description": "Third level education institution"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.265678366,
+          53.32418357
+        ]
+      },
+      "properties": {
+        "id": 21,
+        "name": "Rathmines Library",
+        "category": "library",
+        "address": "157 Lower Rathmines Road",
+        "description": "Books, movies and more, learning and studying and free access to computers and the internet"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.2629391,
+          53.339172
+        ]
+      },
+      "properties": {
+        "id": 179,
+        "name": "RCSI 123 St. Stephen's Green",
+        "category": "heritage",
+        "address": "123 St. Stephen's Green",
+        "description": "RCSI's historic building 123 St. Stephen's Green, occupied by rebels during the 1916 Rising, is open for tours during Culture Night and Heritage Week"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.26371002,
+          53.34083208
+        ]
+      },
+      "properties": {
+        "id": 52,
+        "name": "RCSI Heritage Collections",
+        "category": "museum",
+        "address": "3rd Floor, Old Mercer Hospital",
+        "description": "The Royal College of Surgeons in Irelands collection on the history of surgery and medicine"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.226470704,
+          53.34151383
+        ]
+      },
+      "properties": {
+        "id": 22,
+        "name": "Ringsend Library",
+        "category": "library",
+        "address": "Fitzwilliam Street",
+        "description": "Books, movies and more, learning and studying and free access to computers and the internet"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.254477662,
+          53.34133961
+        ]
+      },
+      "properties": {
+        "id": 53,
+        "name": "Royal College of Physicians Heritage Centre",
+        "category": "museum",
+        "address": "6 Kildare Street",
+        "description": "The history of medicine and medical humanities in Ireland"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.220231102,
+          53.39024071
+        ]
+      },
+      "properties": {
+        "id": 124,
+        "name": "Royal College of Surgeons in Ireland",
+        "category": "university",
+        "address": "123 St. Stephens Green",
+        "description": "RCSI is a health sciences education and research institution offering education and training at undergraduate, postgraduate and professional level"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.299724664,
+          53.3433089
+        ]
+      },
+      "properties": {
+        "id": 167,
+        "name": "Royal Hospital Kilmainham",
+        "category": "heritage",
+        "address": "Military Road",
+        "description": "The oldest classical building in Ireland is closed for restoration until late 2019"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.288282854,
+          53.35627552
+        ]
+      },
+      "properties": {
+        "id": 125,
+        "name": "Saor Ollscoil Na hEireann",
+        "category": "university",
+        "address": "55 Prussia Street",
+        "description": "Third level education institution"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.273545849,
+          53.34379959
+        ]
+      },
+      "properties": {
+        "id": 168,
+        "name": "St. Audeon's Church Heritage Site",
+        "category": "heritage",
+        "address": "High Street",
+        "description": "The only medieval parish church left in Dublin housing an award-winning exhibition on its history"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.299774,
+          53.387913
+        ]
+      },
+      "properties": {
+        "id": 169,
+        "name": "St. Canice's Graveyard",
+        "category": "heritage",
+        "address": "Church Street",
+        "description": "A glimpse of Dublin's history and the lives of its past residents"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.277384495,
+          53.38545014
+        ]
+      },
+      "properties": {
+        "id": 126,
+        "name": "St. Kevin's College",
+        "category": "university",
+        "address": "Clogher Road",
+        "description": "Third level education institution"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.269323729,
+          53.3475015
+        ]
+      },
+      "properties": {
+        "id": 170,
+        "name": "St. Mary's Abbey",
+        "category": "heritage",
+        "address": "5-6 Meetinghouse Lane",
+        "description": "12th century abbey in the heart of Dublin housing a fascinating exhibition"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.258889673,
+          53.35113732
+        ]
+      },
+      "properties": {
+        "id": 171,
+        "name": "St. Mary's Pro Cathedral",
+        "category": "heritage",
+        "address": "83 Marlborough Street",
+        "description": "A magnificent 19th century building linked to significant moments in Irish history"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.275400418,
+          53.34745739
+        ]
+      },
+      "properties": {
+        "id": 172,
+        "name": "St. Michan's Parish Church",
+        "category": "heritage",
+        "address": "Church Street",
+        "description": "Tours of the mummified remains of Dublinâ€™s most influential families and Handelâ€™s pipe organ (allegedly)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.270843,
+          53.339261
+        ]
+      },
+      "properties": {
+        "id": 173,
+        "name": "St. Patrick's Cathedral Cemetery",
+        "category": "heritage",
+        "address": "Saint Patricks Cathedral, Saint Patricks Close",
+        "description": "A glimpse of Dublin's history and the lives of its past residents"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.250657678,
+          53.34188018
+        ]
+      },
+      "properties": {
+        "id": 174,
+        "name": "Sweny's Pharmacy",
+        "category": "heritage",
+        "address": "1 Lincoln Place",
+        "description": "The pharmacy immortalised in James Joyces Ulysses preserved as it was in his time"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.273462225,
+          53.34294003
+        ]
+      },
+      "properties": {
+        "id": 175,
+        "name": "Tailors Hall",
+        "category": "heritage",
+        "address": "Back Lane",
+        "description": "The oldest surviving Guild Hall in Dublin, site of the Back Lane Parliament"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.285265048,
+          53.30895435
+        ]
+      },
+      "properties": {
+        "id": 23,
+        "name": "Terenure Library",
+        "category": "library",
+        "address": "Templeogue Road",
+        "description": "Books, movies and more, learning and studying and free access to computers and the internet"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.223228,
+          53.305828
+        ]
+      },
+      "properties": {
+        "id": 54,
+        "name": "The Classical Museum",
+        "category": "museum",
+        "address": "UCD John Henry Newman Building",
+        "description": "Artefacts from the ancient world including a 2nd century Roman sarcophagus"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.274994275,
+          53.34603971
+        ]
+      },
+      "properties": {
+        "id": 176,
+        "name": "The Four Courts",
+        "category": "heritage",
+        "address": "Inns Quay",
+        "description": "200 years at the heart of social and political change in Ireland"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.268491704,
+          53.34475791
+        ]
+      },
+      "properties": {
+        "id": 127,
+        "name": "The Gaiety School of Acting - The National Theatre School of Ireland",
+        "category": "university",
+        "address": "Essex Street West",
+        "description": "Actor training, proudly instilling confidence, creativity and passion for the arts"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.23008,
+          53.31852
+        ]
+      },
+      "properties": {
+        "id": 155,
+        "name": "The Irish War Memorials Project",
+        "category": "heritage",
+        "address": "Belville House",
+        "description": "Find and visit war memorials across Dublin"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.282837088,
+          53.34874354
+        ]
+      },
+      "properties": {
+        "id": 128,
+        "name": "The Law Society",
+        "category": "university",
+        "address": "21A Blackhall Place",
+        "description": "Third level education institution"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.239758,
+          53.34233852
+        ]
+      },
+      "properties": {
+        "id": 129,
+        "name": "The Lir National Academy of Dramatic Art at Trinity College Dublin",
+        "category": "university",
+        "address": "Trinity Technology and Enterprise Campus",
+        "description": "Conservatoire training in theatre-related disciplines"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.25833022,
+          53.33956767
+        ]
+      },
+      "properties": {
+        "id": 62,
+        "name": "The Little Museum of Dublin",
+        "category": "museum",
+        "address": "15 St Stephen's Green",
+        "description": "History comes to life in the Little Museum of Dublin. Our award-winning storytellers reveal the history of Dublin - from the Vikings to U2."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.278332269,
+          53.34295174
+        ]
+      },
+      "properties": {
+        "id": 130,
+        "name": "The National College of Art and Design",
+        "category": "university",
+        "address": "100-108 Thomas Street",
+        "description": "Third level education institution"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.25332806,
+          53.33985113
+        ]
+      },
+      "properties": {
+        "id": 55,
+        "name": "The National Museum of Ireland - Archaeology",
+        "category": "museum",
+        "address": "Kildare Street",
+        "description": "Discover gold, bog bodies, Viking artefacts and lots more archaeological objects"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.287717014,
+          53.34889149
+        ]
+      },
+      "properties": {
+        "id": 56,
+        "name": "The National Museum of Ireland - Decorative Arts and History",
+        "category": "museum",
+        "address": "Collins Barracks",
+        "description": "Discover weapons, furniture, silver, Asian art and the Asgard, folklife and costumes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.258891364,
+          53.34666591
+        ]
+      },
+      "properties": {
+        "id": 57,
+        "name": "The National Wax Museum Plus",
+        "category": "museum",
+        "address": "22-25 The Lafayette Building",
+        "description": "Historical figures to cartoon characters, and everything else in between"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.240971039,
+          53.34242192
+        ]
+      },
+      "properties": {
+        "id": 58,
+        "name": "The Old Library & Book of Kells Exhibition",
+        "category": "museum",
+        "address": "Trinity College",
+        "description": "Ireland's greatest cultural treasure and the worlds most famous medieval manuscript"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.271127577,
+          53.34345791
+        ]
+      },
+      "properties": {
+        "id": 59,
+        "name": "Treasures of Christ Church",
+        "category": "museum",
+        "address": "Christchurch Cathedral",
+        "description": "Priceless silver, a mummified cat and rat, Ireland's first copy of Magna Carta and 1,000 years of worship"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.250026818,
+          53.34196262
+        ]
+      },
+      "properties": {
+        "id": 131,
+        "name": "Trinity Centre for Literary and Cultural Translation",
+        "category": "university",
+        "address": "36 Fenian Street",
+        "description": "We promote literary translation through events, research and publications"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.258739045,
+          53.34409474
+        ]
+      },
+      "properties": {
+        "id": 132,
+        "name": "Trinity College",
+        "category": "university",
+        "address": "College Street",
+        "description": "Third level education institution"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.240971039,
+          53.34242192
+        ]
+      },
+      "properties": {
+        "id": 177,
+        "name": "Trinity College Dublin",
+        "category": "heritage",
+        "address": "College Green",
+        "description": "Home to Irelands greatest cultural treasure the Book of Kells, the Science Gallery and Zoological Museum"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.253131808,
+          53.34174892
+        ]
+      },
+      "properties": {
+        "id": 60,
+        "name": "Trinity College Library",
+        "category": "museum",
+        "address": "Trinity College",
+        "description": "The magnificent 18th century Old Library building housing the Book of Kells, a 9th-century gospel manuscript famous worldwide"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.283604532,
+          53.35799724
+        ]
+      },
+      "properties": {
+        "id": 87,
+        "name": "TU Dublin School of Creative Arts",
+        "category": "university",
+        "address": "TU Dublin",
+        "description": "Creating innovative art and design to help people see the world in new and different ways"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.223462,
+          53.306702
+        ]
+      },
+      "properties": {
+        "id": 61,
+        "name": "UCD Archives",
+        "category": "museum",
+        "address": "UCD James Joyce Library",
+        "description": "About the foundation and development of modern Ireland and UCD"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.266046454,
+          53.35797118
+        ]
+      },
+      "properties": {
+        "id": 133,
+        "name": "University College Dublin",
+        "category": "university",
+        "address": "Stillorgan Road, Belfield",
+        "description": "Third level education institution"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.321839972,
+          53.31869943
+        ]
+      },
+      "properties": {
+        "id": 24,
+        "name": "Walkinstown Library",
+        "category": "library",
+        "address": "Percy French Road",
+        "description": "Books, movies and more, learning and studying and free access to computers and the internet"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.267067187,
+          53.34521686
+        ]
+      },
+      "properties": {
+        "id": 134,
+        "name": "Westmoreland College",
+        "category": "university",
+        "address": "43222 Dollard House",
+        "description": "Third level education institution"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.263659613,
+          53.37307952
+        ]
+      },
+      "properties": {
+        "id": 135,
+        "name": "Whitehall College of Further Education",
+        "category": "university",
+        "address": "Swords Road",
+        "description": "Third level education institution"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.250479081,
+          53.37710624
+        ]
+      },
+      "properties": {
+        "id": 136,
+        "name": "Whitehall College of Further Education Sportsground",
+        "category": "university",
+        "address": "Swords Road",
+        "description": "QQI Level 5 or 6 day courses for school leavers and mature students"
+      }
+    }
+  ]
+}

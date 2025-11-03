@@ -1,8 +1,8 @@
-from rest_framework_gis.serializers import GeoFeatureModelSerializer
+from rest_framework import serializers
 from .models import KnowledgePlace
 
-class KnowledgePlaceSerializer(GeoFeatureModelSerializer):
+class KnowledgePlaceSerializer(serializers.ModelSerializer):
+    """Serializer for Knowledge Places"""
     class Meta:
         model = KnowledgePlace
-        geo_field = "geometry"
-        fields = ('id', 'name', 'category', 'address', 'description')
+        fields = ['id', 'name', 'category', 'address', 'description', 'geometry']

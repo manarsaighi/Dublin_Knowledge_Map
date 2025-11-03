@@ -1,65 +1,39 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Dublin Knowledge Map</title>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>Knowledge Places Map</title>
   <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
   <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
   <style>
-    #map { width: 100%; height: 600px; }
-    .legend {
-      background: white;
-      padding: 10px;
-      line-height: 18px;
-      color: #555;
-      border-radius: 5px;
-    }
-    .legend span {
-      display: inline-block;
-      width: 12px;
-      height: 12px;
-      margin-right: 5px;
-    }
+    #map { height: 90vh; width: 100%; }
   </style>
 </head>
 <body>
-<div id="map"></div>
+  <h2>Knowledge Places</h2>
+  <div id="map"></div>
 
-<script>
-const map = L.map('map').setView([53.355, -6.283], 13);
+  <script>
+    const map = L.map('map').setView([53.3498, -6.2603], 13);
 
-// base map 
-L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-  attribution: '© OpenStreetMap contributors'
-}).addTo(map);
-
-// assigning colours to categories
-const categoryColors = {
-  'Library': 'blue',
-  'Museum': 'green',
-  'University': 'orange',
-  'Heritage': 'red'
-};
-
-fetch('/static/places/knowledge_places2.geojson')
-  .then(res => res.json())
-  .then(data => {
-    const geojsonLayer = L.geoJSON(data, {
-      pointToLayer: function(feature, latlng) {
-        return L.marker(latlng);  // default Leaflet marker (pin shape) 
-      },
-      onEachFeature: function(feature, layer) {
-        const props = feature.properties;
-        layer.bindPopup(`<b>${props.name}</b><br>${props.category}<br>${props.address}`);
-      }
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      maxZoom: 19,
+      attribution: '© OpenStreetMap contributors'
     }).addTo(map);
 
-    map.fitBounds(geojsonLayer.getBounds());
-  })
-  .catch(err => console.error('Error loading GeoJSON:', err));
-
-</script>
-
+    fetch('/api/knowledgeplaces/geojson/')
+      .then(res => res.json())
+      .then(data => {
+        L.geoJSON(data, {
+          onEachFeature: function (feature, layer) {
+            layer.bindPopup(`
+              <b>${feature.properties.name}</b><br>
+              ${feature.properties.category}<br>
+              ${feature.properties.address || ''}
+            `);
+          }
+        }).addTo(map);
+      });
+  </script>
 </body>
 </html>
