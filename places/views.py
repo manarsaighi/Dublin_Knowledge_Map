@@ -1,60 +1,54 @@
 from rest_framework import generics
 from rest_framework.decorators import api_view
+from rest_framework.response import Response
 from django.http import JsonResponse
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
+from django.contrib.gis.geos import Point
+from django.contrib.gis.db.models.functions import Distance
 from .models import KnowledgePlace, Route
 from .serializers import KnowledgePlaceSerializer, RouteSerializer
 import json
 
 
 class KnowledgePlaceListCreateView(generics.ListCreateAPIView):
-    """List all KnowledgePlaces or create a new one"""
     queryset = KnowledgePlace.objects.all()
     serializer_class = KnowledgePlaceSerializer
 
 class KnowledgePlaceDetailView(generics.RetrieveUpdateDestroyAPIView):
-    """Retrieve, update, or delete a KnowledgePlace"""
     queryset = KnowledgePlace.objects.all()
     serializer_class = KnowledgePlaceSerializer
 
+
 @api_view(['GET'])
 def knowledgeplaces_geojson(request):
-    """Return KnowledgePlace data as GeoJSON for Leaflet"""
     places = KnowledgePlace.objects.all()
-    features = []
-    for place in places:
-        if not place.geometry:
-            continue
-        features.append({
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [place.geometry.x, place.geometry.y],
-            },
-            "properties": {
-                "id": place.id,
-                "name": place.name,
-                "category": place.category,
-                "address": place.address or "",
-                "description": place.description or "",
-            },
-        })
+    features = [{
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [p.geometry.x, p.geometry.y]
+        },
+        "properties": {
+            "id": p.id,
+            "name": p.name,
+            "category": p.category,
+            "address": p.address or "",
+            "description": p.description or ""
+        }
+    } for p in places]
     return JsonResponse({"type": "FeatureCollection", "features": features})
 
 
 class RouteListCreateView(generics.ListCreateAPIView):
-    """List or create Routes"""
     queryset = Route.objects.all()
     serializer_class = RouteSerializer
 
 class RouteDetailView(generics.RetrieveUpdateDestroyAPIView):
-    """Retrieve, update, or delete a Route"""
     queryset = Route.objects.all()
     serializer_class = RouteSerializer
 
 @api_view(['GET'])
 def routes_geojson(request):
-    """Return Routes as GeoJSON for Leaflet"""
     routes = Route.objects.all()
     features = []
     for route in routes:
@@ -71,6 +65,39 @@ def routes_geojson(request):
         })
     return JsonResponse({"type": "FeatureCollection", "features": features})
 
+
+@api_view(['GET'])
+def places_within_radius(request):
+    """
+    Return KnowledgePlaces within a given radius (meters) of a point.
+    Example: /api/knowledgeplaces/within_radius/?lat=53.3498&lon=-6.2603&radius=50
+    """
+    try:
+        lat = float(request.GET.get('lat'))
+        lon = float(request.GET.get('lon'))
+    except (TypeError, ValueError):
+        return Response({"error": "lat and lon parameters are required and must be numbers"}, status=400)
+
+    radius = float(request.GET.get('radius', 500))  
+    center = Point(lon, lat, srid=4326)
+
+    # Annotate distance and filter by radius
+    places = KnowledgePlace.objects.annotate(
+        distance=Distance('geometry', center)
+    ).filter(distance__lte=radius).order_by('distance')
+
+    serializer = KnowledgePlaceSerializer(places, many=True)
+    return Response(serializer.data)
+
+@api_view(['GET'])
+def routes_intersect_place(request, place_id):
+    """Return all routes that intersect a given place"""
+    place = get_object_or_404(KnowledgePlace, id=place_id)
+    routes = Route.objects.filter(path__intersects=place.geometry)
+    serializer = RouteSerializer(routes, many=True)
+    return Response(serializer.data)
+
+
 def map_view(request):
-    """Render the Leaflet map"""
+    """Render the Leaflet map template"""
     return render(request, 'places/map.html')

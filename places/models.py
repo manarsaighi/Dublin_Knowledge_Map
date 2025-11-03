@@ -12,7 +12,7 @@ class KnowledgePlace(models.Model):
     category = models.CharField(max_length=50, choices=CATEGORY_CHOICES)
     address = models.CharField(max_length=255, blank=True, null=True)
     description = models.TextField(blank=True, null=True)
-    geometry = models.PointField(srid=4326)
+    geometry = models.PointField(srid=4326, spatial_index=True)
 
     class Meta:
         db_table = 'places_knowledgeplace'
