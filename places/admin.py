@@ -13,3 +13,4 @@ class KnowledgePlaceAdmin(GISModelAdmin):
 class RouteAdmin(GISModelAdmin):
     list_display = ("name",)
     search_fields = ("name", "description")
+ 

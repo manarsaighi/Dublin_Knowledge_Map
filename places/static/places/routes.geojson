@@ -1,0 +1,50 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-6.27018, 53.35234],
+          [-6.26650, 53.35120],
+          [-6.26200, 53.34950]
+        ]
+      },
+      "properties": {
+        "name": "Dublin Literary Walk",
+        "description": "Visit literary landmarks including museums and libraries."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-6.27050, 53.35300],
+          [-6.26500, 53.35450],
+          [-6.26000, 53.35350]
+        ]
+      },
+      "properties": {
+        "name": "University Tour",
+        "description": "Tour connecting Dublin's main universities."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-6.27100, 53.35150],
+          [-6.26750, 53.35000],
+          [-6.26350, 53.34850]
+        ]
+      },
+      "properties": {
+        "name": "Heritage Trail",
+        "description": "Walk through Dublin's heritage and historical sites."
+      }
+    }
+  ]
+}
