@@ -4,8 +4,8 @@ class KnowledgePlace(models.Model):
     CATEGORY_CHOICES = [
         ('library', 'Library'),
         ('museum', 'Museum'),
-        ('university', 'University or College'),
-        ('heritage', 'Heritage or Literary Landmark'),
+        ('university', 'University'),
+        ('heritage', 'Heritage'),
     ]
 
     name = models.CharField(max_length=200)
