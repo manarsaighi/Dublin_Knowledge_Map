@@ -12,12 +12,11 @@ urlpatterns = [
     path('api/routes/', views.RouteListCreateView.as_view(), name='route-list'),
     path('api/routes/<int:pk>/', views.RouteDetailView.as_view(), name='route-detail'),
     path('api/routes/geojson/', views.routes_geojson, name='routes-geojson'),
+     
+     
+    path('routes/places-near/<int:route_id>/', views.places_near_route, name='places-near-route'),
+  
 
-     path(
-        'api/routes/intersect-place/<int:place_id>/',
-        views.routes_intersect_place,
-        name='routes-intersect-place'
-    ),
     # Map template
     path('', views.map_view, name='map-view'),
 ]

@@ -6,106 +6,180 @@
   <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
   <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
   <style>
-    #map { height: 90vh; width: 100%; }
-    .control-buttons { margin: 10px; }
-    button { margin-right: 5px; padding: 5px 10px; }
+    html, body { height: 100%; margin: 0; padding: 0; font-family: Arial, sans-serif; }
+    #map { height: 100%; width: 100%; }
+    .controls {
+      position: absolute; top: 10px; left: 10px; background: rgba(255,255,255,0.9);
+      padding: 10px; border-radius: 8px; box-shadow: 0 0 5px rgba(0,0,0,0.3); z-index: 1000;
+    }
+    .controls button, .controls select, .controls input {
+      display: block; margin: 5px 0; padding: 6px 12px; cursor: pointer;
+      border: none; border-radius: 4px;
+    }
+    .controls button { background-color: #007BFF; color: white; transition: background 0.2s; }
+    .controls button.active { background-color: #28a745; }
+    .legend {
+      position: absolute; bottom: 10px; left: 10px; background: rgba(255,255,255,0.9);
+      padding: 10px; border-radius: 8px; box-shadow: 0 0 5px rgba(0,0,0,0.3); z-index: 1000; line-height: 1.6;
+    }
+    .legend .color-box { display: inline-block; width: 15px; height: 15px; margin-right: 5px; vertical-align: middle; }
   </style>
 </head>
 <body>
-  <h2>Knowledge Places Map</h2>
-
-  <div class="control-buttons">
-    <button id="search-nearby">Search Nearby</button>
-    <button id="highlight-route">Highlight Route</button>
+  <div class="controls">
+    <button id="toggle-places" class="active">Toggle KnowledgePlaces</button>
+    <button id="toggle-highlight" class="active">Toggle Query Results</button>
+    <input type="number" id="buffer-distance" value="500" style="width: 60px;" /> metres
+    <select id="category-filter">
+      <option value="all">All</option>
+      <option value="library">Library</option>
+      <option value="museum">Museum</option>
+      <option value="heritage">Heritage</option>
+      <option value="university">University</option>
+    </select>
   </div>
 
   <div id="map"></div>
 
+  <div class="legend">
+    <strong>Legend</strong><br>
+    <div><span class="color-box" style="background:red"></span>Library</div>
+    <div><span class="color-box" style="background:blue"></span>Museum</div>
+    <div><span class="color-box" style="background:orange"></span>Heritage</div>
+    <div><span class="color-box" style="background:purple"></span>University</div>
+    <div><span class="color-box" style="background:green"></span>Query Result</div>
+    <div><span class="color-box" style="background:black"></span>Route</div>
+  </div>
+
   <script>
-    const map = L.map('map').setView([53.3498, -6.2603], 13);
+  const map = L.map('map').setView([53.3498, -6.2603], 13);
 
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-      maxZoom: 19,
-      attribution: '© OpenStreetMap contributors'
-    }).addTo(map);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+    attribution: '© OpenStreetMap contributors'
+  }).addTo(map);
 
-    let placesLayer = L.layerGroup().addTo(map);
-    let routesLayer = L.layerGroup().addTo(map);
-    let highlightedLayer = L.layerGroup().addTo(map);
+  const placesLayer = L.layerGroup().addTo(map);
+  const highlightedLayer = L.layerGroup().addTo(map);
+  const routesLayer = L.layerGroup().addTo(map);
 
-    // Pick route color by category
-    function getColorByCategory(name) {
-      if (name.includes("Library")) return "red";
-      if (name.includes("Museum")) return "blue";
-      if (name.includes("Heritage")) return "green";
-      if (name.includes("College")) return "purple";
-      return "black";
-    }
+  const categoryColors = {
+    library: 'red',
+    museum: 'blue',
+    heritage: 'orange',
+    university: 'purple'
+  };
 
-    // Load KnowledgePlaces
-    fetch('/api/knowledgeplaces/geojson/')
+  let allPlaces = []; // store all markers with category info
+
+  const categoryFilter = document.getElementById('category-filter');
+
+  // Function to update KnowledgePlaces layer based on category filter
+  function updatePlacesLayer() {
+    placesLayer.clearLayers();
+    const selectedCategory = categoryFilter.value;
+    allPlaces.forEach(marker => {
+      if (selectedCategory === 'all' || marker.options.category === selectedCategory) {
+        marker.addTo(placesLayer);
+      }
+    });
+  }
+
+  // Function to update highlighted query results based on category filter
+  function updateHighlightedLayer() {
+    const selectedCategory = categoryFilter.value;
+    highlightedLayer.eachLayer(marker => {
+      if (selectedCategory === 'all' || marker.options.category === selectedCategory) {
+        marker.addTo(map);
+      } else {
+        map.removeLayer(marker);
+      }
+    });
+  }
+
+  categoryFilter.addEventListener('change', () => {
+    updatePlacesLayer();
+    updateHighlightedLayer();
+  });
+
+  // Load KnowledgePlaces
+  fetch('/api/knowledgeplaces/geojson/')
+    .then(res => res.json())
+    .then(data => {
+      allPlaces = data.features.map(feature => {
+        const category = feature.properties.category;
+        return L.circleMarker(
+          [feature.geometry.coordinates[1], feature.geometry.coordinates[0]],
+          { color: categoryColors[category] || 'gray', radius: 6, category }
+        ).bindPopup(`<b>${feature.properties.name}</b><br>${category}<br>${feature.properties.address || ''}`);
+      });
+      updatePlacesLayer();
+    });
+
+  // Load Routes
+  fetch('/api/routes/geojson/')
+    .then(res => res.json())
+    .then(data => {
+      data.features.forEach(feature => {
+        L.geoJSON(feature, { style: { color: 'black', weight: 4 } })
+          .addTo(routesLayer)
+          .on('click', () => highlightPlacesNearRoute(feature.properties.id));
+      });
+    });
+
+  // Toggle KnowledgePlaces
+  document.getElementById('toggle-places').addEventListener('click', function() {
+    if (map.hasLayer(placesLayer)) { map.removeLayer(placesLayer); this.classList.remove('active'); }
+    else { map.addLayer(placesLayer); this.classList.add('active'); }
+  });
+
+  // Toggle highlighted query results
+  document.getElementById('toggle-highlight').addEventListener('click', function() {
+    if (map.hasLayer(highlightedLayer)) { map.removeLayer(highlightedLayer); this.classList.remove('active'); }
+    else { map.addLayer(highlightedLayer); this.classList.add('active'); }
+  });
+
+  // Highlight places near route with buffer
+  function highlightPlacesNearRoute(routeId) {
+    highlightedLayer.clearLayers();
+    const buffer = document.getElementById('buffer-distance').value || 50;
+
+    fetch(`/api/routes/places-near/${routeId}/?buffer=${buffer}`)
       .then(res => res.json())
       .then(data => {
-        L.geoJSON(data, {
-          pointToLayer: (feature, latlng) => L.circleMarker(latlng, {color: 'red', radius: 6}),
-          onEachFeature: (feature, layer) => {
-            layer.bindPopup(`<b>${feature.properties.name}</b><br>${feature.properties.category}<br>${feature.properties.address || ''}`);
-          }
-        }).addTo(placesLayer);
-      });
-
-    // Load Routes
-    fetch('/api/routes/geojson/')
-      .then(res => res.json())
-      .then(data => {
-        L.geoJSON(data, {
-          style: feature => ({ color: getColorByCategory(feature.properties.name), weight: 4 }),
-          onEachFeature: (feature, layer) => {
-            layer.bindPopup(`<b>${feature.properties.name}</b><br>${feature.properties.description || ''}`);
-            // Highlight nearby places when route clicked
-            layer.on('click', () => {
-              highlightedLayer.clearLayers();
-              fetch(`/api/knowledgeplaces/places/near-route/${feature.properties.id}/?buffer=50`)
-                .then(res => res.json())
-                .then(data => {
-                  L.geoJSON(data, {
-                    pointToLayer: (f, latlng) => L.circleMarker(latlng, {color: 'green', radius: 8}),
-                    onEachFeature: (f, l) => { l.bindPopup(`<b>${f.name}</b>`); }
-                  }).addTo(highlightedLayer);
-                });
-            });
-          }
-        }).addTo(routesLayer);
-      });
-
-    // Highlight places within radius on map click
-    map.on('click', function(e) {
-      highlightedLayer.clearLayers();
-      const lat = e.latlng.lat;
-      const lon = e.latlng.lng;
-      fetch(`/api/knowledgeplaces/within_radius/?lat=${lat}&lon=${lon}&radius=500`)
-        .then(res => res.json())
-        .then(data => {
-          data.forEach(place => {
-            const coords = place.geometry.match(/POINT \((-?\d+\.\d+) (-?\d+\.\d+)\)/);
-            if (!coords) return;
-            const lon = parseFloat(coords[1]);
-            const lat = parseFloat(coords[2]);
-            L.circleMarker([lat, lon], {color: 'orange', radius: 8})
-              .addTo(highlightedLayer)
-              .bindPopup(`<b>${place.name}</b>`);
-          });
+        data.forEach(place => {
+          const coords = place.geometry.match(/POINT \((-?\d+\.\d+) (-?\d+\.\d+)\)/);
+          if (!coords) return;
+          const lon = parseFloat(coords[1]);
+          const lat = parseFloat(coords[2]);
+          const marker = L.marker([lat, lon], { category: place.category, icon: undefined })
+            .bindPopup(`<b>${place.name}</b><br>${place.category}`);
+          highlightedLayer.addLayer(marker);
         });
-    });
+        updateHighlightedLayer();
+      });
+  }
 
-    // Buttons explain functionality
-    document.getElementById('search-nearby').addEventListener('click', () => {
-      alert('Click anywhere on the map to search for nearby KnowledgePlaces!');
-    });
-    document.getElementById('highlight-route').addEventListener('click', () => {
-      alert('Click a route to highlight nearby KnowledgePlaces!');
-    });
+  // Click map for proximity query
+  map.on('click', function(e) {
+    highlightedLayer.clearLayers();
+    const radius = document.getElementById('buffer-distance').value || 500;
 
+    fetch(`/api/knowledgeplaces/within_radius/?lat=${e.latlng.lat}&lon=${e.latlng.lng}&radius=${radius}`)
+      .then(res => res.json())
+      .then(data => {
+        data.forEach(place => {
+          const coords = place.geometry.match(/POINT \((-?\d+\.\d+) (-?\d+\.\d+)\)/);
+          if (!coords) return;
+          const lon = parseFloat(coords[1]);
+          const lat = parseFloat(coords[2]);
+          const marker = L.marker([lat, lon], { category: place.category })
+            .bindPopup(`<b>${place.name}</b><br>${place.category}`);
+          highlightedLayer.addLayer(marker);
+        });
+        updateHighlightedLayer();
+      });
+  });
   </script>
 </body>
 </html>

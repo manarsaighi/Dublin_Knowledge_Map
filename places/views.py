@@ -89,12 +89,32 @@ def places_within_radius(request):
     serializer = KnowledgePlaceSerializer(places, many=True)
     return Response(serializer.data)
 
+# @api_view(['GET'])
+# def routes_intersect_place(request, place_id):
+#     """Return all routes that intersect a given place"""
+#     place = get_object_or_404(KnowledgePlace, id=place_id)
+#     routes = Route.objects.filter(path__intersects=place.geometry)
+#     serializer = RouteSerializer(routes, many=True)
+#     return Response(serializer.data)
+
 @api_view(['GET'])
-def routes_intersect_place(request, place_id):
-    """Return all routes that intersect a given place"""
-    place = get_object_or_404(KnowledgePlace, id=place_id)
-    routes = Route.objects.filter(path__intersects=place.geometry)
-    serializer = RouteSerializer(routes, many=True)
+def places_near_route(request, route_id):
+    """
+    Return KnowledgePlaces within a buffer distance of a route.
+    Example: /api/routes/places-near/1/?buffer=50
+    """
+    buffer_distance = float(request.GET.get('buffer', 50))  # default 50 meters
+    route = get_object_or_404(Route, id=route_id)
+
+    if not route.path:
+        return Response([])  # no path geometry
+
+    # Filter places within buffer
+    places = KnowledgePlace.objects.filter(
+        geometry__distance_lte=(route.path, D(m=buffer_distance))
+    )
+
+    serializer = KnowledgePlaceSerializer(places, many=True)
     return Response(serializer.data)
 
 
