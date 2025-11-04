@@ -13,14 +13,18 @@ import os
 from pyproj import datadir
 from pathlib import Path
 
+
+#set environment variables for GIS  libraries proj and gdal
+#so django can find them
 os.environ['PROJ_LIB'] = datadir.get_data_dir()
 os.environ['GDAL_DATA'] = datadir.get_data_dir()
 
-
+# pointing to project root
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 
 SECRET_KEY = 'django-insecure-irs16i%142p%wwrjg)bh2550&17m724-14feawr5(y-(-g3pq+'
+
 
 DEBUG = True
 
@@ -28,6 +32,7 @@ ALLOWED_HOSTS = []
 
 
 INSTALLED_APPS = [
+    # default django apps
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -35,16 +40,20 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     
-    
+    # gis support
     'django.contrib.gis',    
+    # third party apps
     'rest_framework',
+    
+    #custom apps
     'places',       
   
 ]
 
+#path to gdal library for windows functionality 
 GDAL_LIBRARY_PATH = r"C:\Users\manar\literary_map\venv\Lib\site-packages\osgeo\gdal.dll"
 
-
+# functionsto process requests and response
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -55,8 +64,12 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
+# root url config
 ROOT_URLCONF = 'dublin_literary_map.urls'
 
+
+#template settings
+# django needs to look for html templates
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
@@ -72,9 +85,11 @@ TEMPLATES = [
     },
 ]
 
+# wsgi app used by servers to run the project
 WSGI_APPLICATION = 'dublin_literary_map.wsgi.application'
 
 
+# database config
 DATABASES = {
     'default': {
         'ENGINE': 'django.contrib.gis.db.backends.postgis',

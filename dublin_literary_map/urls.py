@@ -18,6 +18,8 @@ from django.contrib import admin
 from django.urls import path, include
 
 urlpatterns = [
+    # admin site url
     path('admin/', admin.site.urls),
+    # all other routes are for places app
     path('', include('places.urls')),
 ]
