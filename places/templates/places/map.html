@@ -1,63 +1,42 @@
 <!DOCTYPE html>
+{% load static %}
+
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>Knowledge Places Map</title>
+
+
+  
   <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
   <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-<style>
-  html, body { height: 100%; margin: 0; padding: 0; font-family: Arial, sans-serif; }
-  #map { height: 100%; width: 100%; }
 
-  .controls {
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
-    background: rgba(255,255,255,0.9);
-    padding: 10px;
-    border-radius: 8px;
-    box-shadow: 0 0 5px rgba(0,0,0,0.3);
-    z-index: 1000;
-  }
 
-  .controls button, .controls select, .controls input {
-    display: block;
-    margin: 5px 0;
-    padding: 6px 12px;
-    cursor: pointer;
-    border: none;
-    border-radius: 4px;
-  }
+<link rel="stylesheet" href="{% static 'places/styles.css' %}">
 
-  .controls button { background-color: #007BFF; color: white; transition: background 0.2s; }
-  .controls button.active { background-color: #28a745; }
 
-  .legend {
-    position: absolute;
-    bottom: 10px;
-    left: 10px;
-    background: rgba(255,255,255,0.9);
-    padding: 10px;
-    border-radius: 8px;
-    box-shadow: 0 0 5px rgba(0,0,0,0.3);
-    z-index: 1000;
-    line-height: 1.6;
-  }
 
-  .legend .color-box {
-    display: inline-block;
-    width: 15px;
-    height: 15px;
-    margin-right: 5px;
-    vertical-align: middle;
-  }
-</style>
+
+
+
+
 </head>
+
+  <header class="page-header">
+    Dublin Knowledge Map
+  </header>
 <body>
-  <div class="controls">
-    <button id="toggle-places" class="active">Toggle KnowledgePlaces</button>
-    <button id="toggle-highlight" class="active">Toggle Query Results</button>
-    <input type="number" id="buffer-distance" value="500" style="width: 60px;" /> metres
+<div class="controls">
+  <button id="toggle-places" class="active">Toggle Locations</button>
+  <button id="toggle-highlight" class="active">Toggle Query Results</button>
+
+  <div class="input-group">
+    <label for="buffer-distance">Buffer Distance (metres)</label>
+    <input type="number" id="buffer-distance" value="500" />
+  </div>
+
+  <div class="input-group">
+    <label for="category-filter">Category</label>
     <select id="category-filter">
       <option value="all">All</option>
       <option value="library">Library</option>
@@ -66,18 +45,20 @@
       <option value="university">University</option>
     </select>
   </div>
+</div>
 
-  <div id="map"></div>
+<div id="map"></div>
 
-  <div class="legend">
-    <strong>Legend</strong><br>
-    <div><span class="color-box" style="background:red"></span>Library</div>
-    <div><span class="color-box" style="background:blue"></span>Museum</div>
-    <div><span class="color-box" style="background:orange"></span>Heritage</div>
-    <div><span class="color-box" style="background:purple"></span>University</div>
-    <div><span class="color-box" style="background:green"></span>Query Result</div>
-    <div><span class="color-box" style="background:black"></span>Route</div>
-  </div>
+<div class="legend">
+  <strong>Legend</strong>
+  <div><span class="color-box" style="background:red"></span>Library</div>
+  <div><span class="color-box" style="background:blue"></span>Museum</div>
+  <div><span class="color-box" style="background:orange"></span>Heritage</div>
+  <div><span class="color-box" style="background:purple"></span>University</div>
+  <div><span class="color-box" style="background:green"></span>Query Result</div>
+  <div><span class="color-box" style="background:black"></span>Route</div>
+</div>
+
 
   <script>
   const map = L.map('map').setView([53.3498, -6.2603], 13);
@@ -102,7 +83,7 @@
 
   const categoryFilter = document.getElementById('category-filter');
 
-  // Function to update KnowledgePlaces layer based on category filter
+  // function to update KnowledgePlaces layer based on category filter
   function updatePlacesLayer() {
     placesLayer.clearLayers();
     const selectedCategory = categoryFilter.value;

@@ -1,0 +1,110 @@
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.page-header {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1001; /* Above controls and map layers */
+  background: green;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.3);
+  text-align: center;
+}
+
+#map {
+  height: 100%;
+  width: 100%;
+}
+
+.controls {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background: rgba(255,255,255,0.95);
+  padding: 12px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.3);
+  z-index: 1000;
+
+}
+
+@media (min-width: 780px) {
+
+
+
+.controls button,
+.controls select,
+.controls input {
+  display: block;
+  width: 30vw;
+  padding: 8px 12px;
+  margin: 5px 0;
+  font-size: 1vw;
+
+}
+
+.controls button {
+  background-color: #007BFF;
+  color: white;
+  transition: background 0.2s;
+}
+
+.controls button.active {
+  background-color: #28a745;
+}
+
+.legend {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background: rgba(255,255,255,0.95);
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.3);
+  z-index: 1000;
+  line-height: 1.6;
+  max-width: 90%;
+  box-sizing: border-box;
+}
+
+.legend .color-box {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+@media (max-width: 480px) {
+  
+.controls button,
+.controls select,
+.controls input {
+  display: block;
+  width: 50vw;
+  padding: 8px 12px;
+  margin: 5px 0;
+  font-size: 1vw;
+
+}
+
+  .input-group label {
+    font-size: 13px;
+  }
+
+  .legend {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+}}
