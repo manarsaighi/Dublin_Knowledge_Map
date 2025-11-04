@@ -5,14 +5,14 @@ import json
 from pathlib import Path
 from django.contrib.gis.geos import GEOSGeometry
 
-# --- Django setup ---
+# django setup
 BASE_DIR = Path(__file__).resolve().parent
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "dublin_literary_map.settings")
 django.setup()
 
 from places.models import Route  # adjust app name if needed
 
-# --- GeoJSON file path ---
+# geojson file path
 geojson_file = BASE_DIR / "places" / "static" / "places" / "routes.geojson"
 
 if not geojson_file.exists():
@@ -31,4 +31,4 @@ for feature in data.get("features", []):
         }
     )
 
-print("Routes imported successfully!")
+print("Routes imported successfully")

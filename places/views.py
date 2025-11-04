@@ -9,6 +9,8 @@ from .models import KnowledgePlace, Route
 from .serializers import KnowledgePlaceSerializer, RouteSerializer
 import json
 
+# knowledge place views
+
 
 class KnowledgePlaceListCreateView(generics.ListCreateAPIView):
     queryset = KnowledgePlace.objects.all()
@@ -39,17 +41,24 @@ def knowledgeplaces_geojson(request):
     return JsonResponse({"type": "FeatureCollection", "features": features})
 
 
+# routes views
+
+
+# list all route or create new one
 class RouteListCreateView(generics.ListCreateAPIView):
     queryset = Route.objects.all()
     serializer_class = RouteSerializer
 
+# retrieve update delete  route
 class RouteDetailView(generics.RetrieveUpdateDestroyAPIView):
     queryset = Route.objects.all()
     serializer_class = RouteSerializer
 
+# return routes as geojson
 @api_view(['GET'])
 def routes_geojson(request):
     routes = Route.objects.all()
+    #convert each place to a geojson feature
     features = []
     for route in routes:
         if not route.path:
@@ -66,6 +75,9 @@ def routes_geojson(request):
     return JsonResponse({"type": "FeatureCollection", "features": features})
 
 
+# spatial queries
+# returne knowledge places within a certainr radius
+
 @api_view(['GET'])
 def places_within_radius(request):
     """
@@ -76,12 +88,13 @@ def places_within_radius(request):
         lat = float(request.GET.get('lat'))
         lon = float(request.GET.get('lon'))
     except (TypeError, ValueError):
+        # error handling
         return Response({"error": "lat and lon parameters are required and must be numbers"}, status=400)
 
-    radius = float(request.GET.get('radius', 500))  
+    radius = float(request.GET.get('radius', 500))  # defaults the radius to 500 metres
     center = Point(lon, lat, srid=4326)
 
-    # Annotate distance and filter by radius
+    # annotate distance and filter by radius
     places = KnowledgePlace.objects.annotate(
         distance=Distance('geometry', center)
     ).filter(distance__lte=radius).order_by('distance')
@@ -97,19 +110,21 @@ def places_within_radius(request):
 #     serializer = RouteSerializer(routes, many=True)
 #     return Response(serializer.data)
 
+# return knowledge places near a specific route within a buffer distance
+
 @api_view(['GET'])
 def places_near_route(request, route_id):
     """
     Return KnowledgePlaces within a buffer distance of a route.
     Example: /api/routes/places-near/1/?buffer=50
     """
-    buffer_distance = float(request.GET.get('buffer', 50))  # default 50 meters
+    buffer_distance = float(request.GET.get('buffer', 500))  # default  buffer to 500 meters
     route = get_object_or_404(Route, id=route_id)
 
     if not route.path:
         return Response([])  # no path geometry
 
-    # Filter places within buffer
+    # filter places within buffer
     places = KnowledgePlace.objects.filter(
         geometry__distance_lte=(route.path, D(m=buffer_distance))
     )
@@ -117,6 +132,9 @@ def places_near_route(request, route_id):
     serializer = KnowledgePlaceSerializer(places, many=True)
     return Response(serializer.data)
 
+
+#frontend view
+#render leaflet map
 
 def map_view(request):
     """Render the Leaflet map template"""

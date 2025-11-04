@@ -56,7 +56,7 @@
   <div><span class="color-box" style="background:orange"></span>Heritage</div>
   <div><span class="color-box" style="background:purple"></span>University</div>
   <div><span class="color-box" style="background:green"></span>Query Result</div>
-  <div><span class="color-box" style="background:black"></span>Route</div>
+  <div><span class="color-box" style="background:gray"></span>Route</div>
 </div>
 
 
@@ -130,7 +130,7 @@
     .then(res => res.json())
     .then(data => {
       data.features.forEach(feature => {
-        L.geoJSON(feature, { style: { color: 'black', weight: 4 } })
+        L.geoJSON(feature, { style: { color: 'gray', weight: 2 } })
           .addTo(routesLayer)
           .on('click', () => highlightPlacesNearRoute(feature.properties.id));
       });
