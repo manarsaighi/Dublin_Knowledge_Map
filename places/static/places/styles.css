@@ -1,4 +1,3 @@
-
 html, body {
   height: 100%;
   margin: 0;
@@ -27,6 +26,16 @@ html, body {
   width: 100%;
 }
 
+  .controls button {
+    background-color: #007BFF;
+    color: white;
+    transition: background 0.2s;
+  }
+
+  .controls button.active {
+    background-color: #28a745;
+  }
+
 .controls {
   position: absolute;
   bottom: 10px;
@@ -36,75 +45,44 @@ html, body {
   border-radius: 8px;
   box-shadow: 0 0 5px rgba(0,0,0,0.3);
   z-index: 1000;
-
 }
 
-@media (min-width: 780px) {
-
-
-
-.controls button,
-.controls select,
-.controls input {
-  display: block;
-  width: 30vw;
-  padding: 8px 12px;
-  margin: 5px 0;
-  font-size: 1vw;
-
-}
-
-.controls button {
-  background-color: #007BFF;
-  color: white;
-  transition: background 0.2s;
-}
-
-.controls button.active {
-  background-color: #28a745;
-}
-
-.legend {
-  position: absolute;
-  bottom: 10px;
-  left: 10px;
-  background: rgba(255,255,255,0.95);
-  padding: 10px;
-  border-radius: 8px;
-  box-shadow: 0 0 5px rgba(0,0,0,0.3);
-  z-index: 1000;
-  line-height: 1.6;
-  max-width: 90%;
-  box-sizing: border-box;
-}
-
-.legend .color-box {
-  display: inline-block;
-  width: 15px;
-  height: 15px;
-  margin-right: 5px;
-  vertical-align: middle;
-}
-
-@media (max-width: 480px) {
-  
-.controls button,
-.controls select,
-.controls input {
-  display: block;
-  width: 50vw;
-  padding: 8px 12px;
-  margin: 5px 0;
-  font-size: 1vw;
-
-}
-
-  .input-group label {
-    font-size: 13px;
-  }
 
   .legend {
-    font-size: 14px;
-    line-height: 1.4;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background: rgba(255,255,255,0.95);
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+    z-index: 1000;
+    line-height: 1.6;
+    max-width: 90%;
+    box-sizing: border-box;
   }
-}}
+
+  .legend .color-box {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+    vertical-align: middle;
+  }
+
+/* Desktop */
+@media (min-width: 780px) {
+  .controls button,
+  .controls select,
+  .controls input {
+    display: block;
+    width: 30vw;
+    padding: 8px 12px;
+    margin: 5px 0;
+    font-size: 1vw;
+  }
+
+
+
+
+}

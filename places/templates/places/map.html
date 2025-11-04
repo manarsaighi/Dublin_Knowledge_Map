@@ -6,35 +6,33 @@
   <meta charset="UTF-8">
   <title>Knowledge Places Map</title>
 
-
-  
+  <!-- Leaflet CSS and JS for interactive maps -->
   <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
   <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 
-
-<link rel="stylesheet" href="{% static 'places/styles.css' %}">
-
-
-
-
-
-
-
+  <!-- CSS -->
+  <link rel="stylesheet" href="{% static 'places/styles.css' %}">
 </head>
 
-  <header class="page-header">
-    Dublin Knowledge Map
-  </header>
+<!-- header -->
+<header class="page-header">
+  Dublin Knowledge Map
+</header>
+
 <body>
+<!-- ctrls -->
 <div class="controls">
+  <!-- Buttons to toggle visibility of markers -->
   <button id="toggle-places" class="active">Toggle Locations</button>
   <button id="toggle-highlight" class="active">Toggle Query Results</button>
 
+  <!-- Input for buffer distance -->
   <div class="input-group">
     <label for="buffer-distance">Buffer Distance (metres)</label>
     <input type="number" id="buffer-distance" value="500" />
   </div>
 
+  <!-- Dropdown for filtering KnowledgePlaces by category -->
   <div class="input-group">
     <label for="category-filter">Category</label>
     <select id="category-filter">
@@ -47,8 +45,10 @@
   </div>
 </div>
 
+<!-- map-->
 <div id="map"></div>
 
+<!-- Map legend for marker colors -->
 <div class="legend">
   <strong>Legend</strong>
   <div><span class="color-box" style="background:red"></span>Library</div>
@@ -60,18 +60,35 @@
 </div>
 
 
-  <script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+  // Initialize the map centered on Dublin with zoom level 13
   const map = L.map('map').setView([53.3498, -6.2603], 13);
 
+  // Add OpenStreetMap tiles
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
     attribution: '© OpenStreetMap contributors'
   }).addTo(map);
 
-  const placesLayer = L.layerGroup().addTo(map);
-  const highlightedLayer = L.layerGroup().addTo(map);
-  const routesLayer = L.layerGroup().addTo(map);
+  // Layer groups to manage different types of features
+  const placesLayer = L.layerGroup().addTo(map);       // KnowledgePlaces markers
+  const highlightedLayer = L.layerGroup().addTo(map);  // Query results or highlighted markers
+  const routesLayer = L.layerGroup().addTo(map);       // Routes polylines
 
+  // Color coding for categories
   const categoryColors = {
     library: 'red',
     museum: 'blue',
@@ -79,13 +96,12 @@
     university: 'purple'
   };
 
-  let allPlaces = []; // store all markers with category info
-
+  let allPlaces = []; // store all KnowledgePlace markers with category info
   const categoryFilter = document.getElementById('category-filter');
 
-  // function to update KnowledgePlaces layer based on category filter
+  // Update KnowledgePlaces layer based on category filter
   function updatePlacesLayer() {
-    placesLayer.clearLayers();
+    placesLayer.clearLayers();  // remove existing markers
     const selectedCategory = categoryFilter.value;
     allPlaces.forEach(marker => {
       if (selectedCategory === 'all' || marker.options.category === selectedCategory) {
@@ -94,7 +110,7 @@
     });
   }
 
-  // Function to update highlighted query results based on category filter
+  // Update highlighted markers based on category filter
   function updateHighlightedLayer() {
     const selectedCategory = categoryFilter.value;
     highlightedLayer.eachLayer(marker => {
@@ -106,62 +122,69 @@
     });
   }
 
+  // Trigger update when category filter changes
   categoryFilter.addEventListener('change', () => {
     updatePlacesLayer();
     updateHighlightedLayer();
   });
 
-  // Load KnowledgePlaces
+
+  // Load KnowledgePlaces and add markers
   fetch('/api/knowledgeplaces/geojson/')
     .then(res => res.json())
     .then(data => {
       allPlaces = data.features.map(feature => {
         const category = feature.properties.category;
         return L.circleMarker(
-          [feature.geometry.coordinates[1], feature.geometry.coordinates[0]],
+          [feature.geometry.coordinates[1], feature.geometry.coordinates[0]],  // lat, lon
           { color: categoryColors[category] || 'gray', radius: 6, category }
         ).bindPopup(`<b>${feature.properties.name}</b><br>${category}<br>${feature.properties.address || ''}`);
       });
       updatePlacesLayer();
     });
 
-  // Load Routes
+  // Load Routes and add polylines
   fetch('/api/routes/geojson/')
     .then(res => res.json())
     .then(data => {
       data.features.forEach(feature => {
         L.geoJSON(feature, { style: { color: 'gray', weight: 2 } })
           .addTo(routesLayer)
-          .on('click', () => highlightPlacesNearRoute(feature.properties.id));
+          .on('click', () => highlightPlacesNearRoute(feature.properties.id)); // highlight places on route click
       });
     });
 
-  // Toggle KnowledgePlaces
+
+  // Toggle KnowledgePlaces markers
   document.getElementById('toggle-places').addEventListener('click', function() {
     if (map.hasLayer(placesLayer)) { map.removeLayer(placesLayer); this.classList.remove('active'); }
     else { map.addLayer(placesLayer); this.classList.add('active'); }
   });
 
-  // Toggle highlighted query results
+  // Toggle highlighted markers
   document.getElementById('toggle-highlight').addEventListener('click', function() {
     if (map.hasLayer(highlightedLayer)) { map.removeLayer(highlightedLayer); this.classList.remove('active'); }
     else { map.addLayer(highlightedLayer); this.classList.add('active'); }
   });
 
-  // Highlight places near route with buffer
+
+  // spatial queries
+  // Highlight places near a selected route using buffer distance
   function highlightPlacesNearRoute(routeId) {
-    highlightedLayer.clearLayers();
     const buffer = document.getElementById('buffer-distance').value || 50;
 
+    // Fetch places near the route from API
     fetch(`/api/routes/places-near/${routeId}/?buffer=${buffer}`)
       .then(res => res.json())
       .then(data => {
         data.forEach(place => {
+          // Convert WKT POINT to lat/lon
           const coords = place.geometry.match(/POINT \((-?\d+\.\d+) (-?\d+\.\d+)\)/);
           if (!coords) return;
           const lon = parseFloat(coords[1]);
           const lat = parseFloat(coords[2]);
-          const marker = L.marker([lat, lon], { category: place.category, icon: undefined })
+          // Add marker to highlighted layer
+          const marker = L.marker([lat, lon], { category: place.category })
             .bindPopup(`<b>${place.name}</b><br>${place.category}`);
           highlightedLayer.addLayer(marker);
         });
@@ -169,9 +192,9 @@
       });
   }
 
-  // Click map for proximity query
+  // Click on map to query places within radius
   map.on('click', function(e) {
-    highlightedLayer.clearLayers();
+    highlightedLayer.clearLayers();  // clear old highlights
     const radius = document.getElementById('buffer-distance').value || 500;
 
     fetch(`/api/knowledgeplaces/within_radius/?lat=${e.latlng.lat}&lon=${e.latlng.lng}&radius=${radius}`)
@@ -189,6 +212,6 @@
         updateHighlightedLayer();
       });
   });
-  </script>
+</script>
 </body>
 </html>
